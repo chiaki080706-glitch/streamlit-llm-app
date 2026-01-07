@@ -49,11 +49,11 @@ selected_item = st.radio(
 st.divider()
 
 if selected_item == "ITアーキテクトへの相談":
-    input_message = st.text_input(label="ITアーキテクトへの相談内容を入力してください。", height=150,
+    input_message = st.text_area(label="ITアーキテクトへの相談内容を入力してください。", height=150,
     placeholder="ここにテキストを入力してください")
 
 else:
-    input_message = st.text_input(label="ファッションについての相談内容を入力してください。", height=150,
+    input_message = st.text_area(label="ファッションについての相談内容を入力してください。", height=150,
     placeholder="ここにテキストを入力してください")
 
 if st.button("送信"):
