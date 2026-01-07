@@ -30,7 +30,7 @@ def call_llm(user_input: str, expert_type: str) -> str:
         HumanMessage(content=user_input)
     ]
 
-    result = llm(messages)
+    result = llm.invoke(messages)
     return result.content
 
 
